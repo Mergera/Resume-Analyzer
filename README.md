@@ -85,30 +85,6 @@ If using Ollama mode, also ensure Ollama is installed locally and running, then 
 ollama pull mistral
 ```
 
-## GitHub + PR Workflow
-
-Set remote to your organization repo:
-
-```powershell
-cd D:\Resume-Analyzer-main
-git remote remove origin
-git remote add origin https://github.com/Mergera/Resume-Analyzer.git
-git fetch origin
-```
-
-Create a feature branch, commit, and push:
-
-```powershell
-git checkout -b feat/google-genai-migration
-git add .
-git commit -m "Migrate app to google-genai and improve docs"
-git push -u origin feat/google-genai-migration
-```
-
-Open PR:
-
-- `https://github.com/Mergera/Resume-Analyzer/pull/new/feat/google-genai-migration`
-
 ## Notes
 
 - Do not commit real API keys.
